@@ -1,0 +1,13 @@
+
+:host {
+  &.sidebar {
+    &.right  {
+      width: var(--ax-sidebar-right-width);
+      height: var(--ax-sidebar-right-height);
+      &.collapsed {
+        transform: translateX(calc(var(--ax-sidebar-right-width) + var(--ax-sidebar-right-padding))); /* Adjust for any margin/padding */
+      }
+    }
+  }
+}
+
