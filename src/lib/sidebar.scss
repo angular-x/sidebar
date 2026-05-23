@@ -1,0 +1,28 @@
+
+:host {
+  --ax-sidebar-padding: 0rem;
+
+  // Left.
+  --ax-sidebar-left-width: 16rem;
+  --ax-sidebar-left-height: auto;
+  --ax-sidebar-left-padding: var(--ax-sidebar-padding);
+
+  // Right.
+  --ax-sidebar-right-width: 16rem;
+  --ax-sidebar-right-height: auto;
+  --ax-sidebar-right-padding: var(--ax-sidebar-padding);
+
+  /* For top/bottom sidebars */
+  --ax-sidebar-top-width: 100%;
+  --ax-sidebar-top-height: 10rem;
+
+  --ax-sidebar-bottom-width: 100%;
+  --ax-sidebar-bottom-height: 10rem;
+
+  &.sidebar {
+    // transform: translateX(0); /* or translateY(0) for top/bottom */
+    transition: transform 0.3s ease;
+    padding: var(--ax-sidebar-padding);
+  }
+}
+
