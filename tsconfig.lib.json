@@ -4,7 +4,6 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
-    "rootDir": "/storage/Developer/angular.x/projects",
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
