@@ -1,6 +1,6 @@
 {
   "name": "@angular.x/sidebar",
-  "version": "1.0.0",
+  "version": "0.0.1-beta",
   "author": "wwwdev.io <dev@wwwdev.io>",
   "description": "An Angular library for app sidebar.",
   "license": "MIT",
