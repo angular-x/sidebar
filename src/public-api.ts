@@ -2,6 +2,6 @@
  * Public API Surface of sidebar
  */
 
-export * from './lib/sidebar';
-export * from './token';
-export type * from './interface';
+export { Sidebar } from './lib/sidebar';
+export { SIDEBAR_CONFIGURATION } from './token';
+export type { SidebarConfiguration } from './interface';
