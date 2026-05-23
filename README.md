@@ -10,9 +10,10 @@
 <!-- npm badge -->
 [![npm version][package-npm-badge-svg]][package-npm-badge]
 [![GitHub issues][package-badge-issues]][package-issues]
+[![GitHub license][package-badge-license]][package-license]
+
 [![GitHub forks][package-badge-forks]][package-forks]
 [![GitHub stars][package-badge-stars]][package-stars]
-[![GitHub license][package-badge-license]][package-license]
 
 An **Angular** library for sidebars.
 
