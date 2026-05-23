@@ -10,6 +10,8 @@
 <!-- npm badge -->
 [![npm version][package-npm-badge-svg]][package-npm-badge]
 [![GitHub issues][package-badge-issues]][package-issues]
+[![GitHub forks][package-badge-forks]][package-forks]
+[![GitHub stars][package-badge-stars]][package-stars]
 [![GitHub license][package-badge-license]][package-license]
 
 An **Angular** library for sidebars.
@@ -21,6 +23,10 @@ An **Angular** library for sidebars.
 - [Api](#api)
   - Component
     - [`Sidebar`](#sidebar)
+  - Token
+    - [`SIDEBAR_CONFIGURATION`](#sidebar_configuration)
+  - Interface
+    - [`SidebarConfiguration`](#sidebarconfiguration)
 - [Contributing](#contributing)
 - [Support](#support)
 - [Code of Conduct](#code-of-conduct)
@@ -45,6 +51,10 @@ npm install @angular.x/sidebar --save-peer
 import {
   // Component.
   Sidebar,
+  // Token.
+  SIDEBAR_CONFIGURATION,
+  // Interface.
+  SidebarConfiguration
 } from '@angular.x/sidebar';
 ```
 
@@ -54,6 +64,22 @@ import {
 
 ```typescript
 import { Sidebar } from '@angular.x/sidebar';
+```
+
+### Token
+
+### `SIDEBAR_CONFIGURATION`
+
+```typescript
+import { SIDEBAR_CONFIGURATION } from '@angular.x/sidebar';
+```
+
+### Interface
+
+### `SidebarConfiguration`
+
+```typescript
+import { SidebarConfiguration } from '@angular.x/sidebar';
 ```
 
 ## Contributing
