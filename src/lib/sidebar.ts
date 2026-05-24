@@ -17,6 +17,23 @@ import { DEFAULT_SIDEBAR_CONFIGURATION } from './default-configuration.const';
   host: {
     'role': 'complementary',
     '[attr.aria-label]': 'ariaLabel() || null',
+
+    // General styles
+    '[style.--ax-sidebar-width]': 'width() ?? null',
+    '[style.--ax-sidebar-height]': 'height() ?? null',
+    '[style.--ax-sidebar-padding]': 'padding() ?? null',
+
+    // Width
+    '[style.--ax-sidebar-left-width]': 'side() === "left" ? width() ?? null : null',
+    '[style.--ax-sidebar-right-width]': 'side() === "right" ? width() ?? null : null',
+
+    // Height
+    '[style.--ax-sidebar-top-height]': 'side() === "top" ? height() ?? null : null',
+    '[style.--ax-sidebar-bottom-height]': 'side() === "bottom" ? height() ?? null : null',
+
+    // Collapsed
+    '[style.--ax-sidebar-left-collapsed-offset]': 'side() === "left" ? collapsedOffset() ?? null : null',
+    '[style.--ax-sidebar-right-collapsed-offset]': 'side() === "right" ? collapsedOffset() ?? null : null',
   }
 })
 export class Sidebar<
@@ -54,9 +71,37 @@ export class Sidebar<
   public collapsed = input<boolean>(false);
 
   /**
-   * @description
+   * @description The side of the sidebar, which can be 'left', 'right', 'top', or 'bottom'.
    * @public
    * @type {*}
    */
   public side = input<S | undefined>();
+
+  /**
+   * @description The width of the sidebar.
+   * @public
+   * @type {*}
+   */
+  public width = input<string | null>(null);
+
+  /**
+   * @description The height of the sidebar.
+   * @public
+   * @type {*}
+   */
+  public height = input<string | null>(null);
+
+  /**
+   * @description The padding inside the sidebar.
+   * @public
+   * @type {*}
+   */
+  public padding = input<string | null>(null);
+
+  /**
+   * @description Left sidebar collapsed offset.
+   * @public
+   * @type {*}
+   */
+  public collapsedOffset = input<string | null>(null);
 }
