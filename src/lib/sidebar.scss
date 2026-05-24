@@ -1,28 +1,54 @@
 
 :host {
+  /**
+   * Sidebar configuration CSS variables.
+   * These variables can be customized to adjust the appearance and behavior of the sidebar.
+   */
+  // Dimensions
+  --ax-sidebar-width: 16rem;
+  --ax-sidebar-height: auto;
+
+  // Padding
   --ax-sidebar-padding: 0rem;
 
-  // Left.
-  --ax-sidebar-left-width: 16rem;
-  --ax-sidebar-left-height: auto;
-  --ax-sidebar-left-padding: var(--ax-sidebar-padding);
+  // Background
+  --ax-sidebar-background-color: var(--ax-color-surface, transparent);
 
-  // Right.
-  --ax-sidebar-right-width: 16rem;
-  --ax-sidebar-right-height: auto;
+  // Borders
+  --ax-sidebar-border-color: var(--ax-color-border, transparent);
+  --ax-sidebar-border-width: var(--ax-border-width, 0px);
+  --ax-sidebar-border-radius: var(--ax-border-radius, 0px);
+  --ax-sidebar-box-shadow: var(--ax-shadow, none);
+
+  // Left sidebar
+  --ax-sidebar-left-width: var(--ax-sidebar-width);
+  --ax-sidebar-left-height: var(--ax-sidebar-height);
+  --ax-sidebar-left-padding: var(--ax-sidebar-padding);
+  --ax-sidebar-left-collapsed-offset: 0rem;
+
+  // Right sidebar
+  --ax-sidebar-right-width: var(--ax-sidebar-width);
+  --ax-sidebar-right-height: var(--ax-sidebar-height);
   --ax-sidebar-right-padding: var(--ax-sidebar-padding);
+  --ax-sidebar-right-collapsed-offset: 0rem;
 
   /* For top/bottom sidebars */
+  // Top sidebar
   --ax-sidebar-top-width: 100%;
   --ax-sidebar-top-height: 10rem;
+  --ax-sidebar-top-collapsed-offset: 0rem; /* Optional: Define a collapsed offset if needed */
 
+  // Bottom sidebar
   --ax-sidebar-bottom-width: 100%;
   --ax-sidebar-bottom-height: 10rem;
+  --ax-sidebar-bottom-collapsed-offset: 0rem; /* Optional: Define a collapsed offset if needed */
 
   &.sidebar {
-    // transform: translateX(0); /* or translateY(0) for top/bottom */
-    transition: transform 0.3s ease;
     padding: var(--ax-sidebar-padding);
+    border: var(--ax-sidebar-border-width) solid var(--ax-sidebar-border-color);
+    border-radius: var(--ax-sidebar-border-radius);
+    background-color: var(--ax-sidebar-background-color);
+    transition: transform 0.3s ease;
   }
 }
 
