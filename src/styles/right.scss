@@ -5,7 +5,11 @@
       width: var(--ax-sidebar-right-width);
       height: var(--ax-sidebar-right-height);
       &.collapsed {
-        transform: translateX(calc(var(--ax-sidebar-right-width) + var(--ax-sidebar-right-padding))); /* Adjust for any margin/padding */
+        transform: translateX(
+          calc(
+            calc(var(--ax-sidebar-right-width) + var(--ax-sidebar-right-padding) + var(--ax-sidebar-right-collapsed-offset)) * -1
+          )
+        ); /* Adjust for any margin/padding */
       }
     }
   }

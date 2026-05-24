@@ -5,7 +5,9 @@
       width: var(--ax-sidebar-bottom-width);
       height: var(--ax-sidebar-bottom-height);
       &.collapsed {
-        transform: translateY(var(--ax-sidebar-bottom-height));
+        transform: translateY(
+          calc(var(--ax-sidebar-bottom-height) + var(--ax-sidebar-bottom-collapsed-offset))
+        );
       }
     }
   }
