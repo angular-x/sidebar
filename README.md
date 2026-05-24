@@ -67,12 +67,45 @@ import {
 import { Sidebar } from '@angular.x/sidebar';
 ```
 
+CSS variables
+
+```css
+:host {
+  --ax-sidebar-padding: 0rem;
+
+  // Left.
+  --ax-sidebar-left-width: 16rem;
+  --ax-sidebar-left-height: auto;
+  --ax-sidebar-left-padding: var(--ax-sidebar-padding);
+  --ax-sidebar-left-collapsed-offset: 0rem;
+
+  // Right.
+  --ax-sidebar-right-width: 16rem;
+  --ax-sidebar-right-height: auto;
+  --ax-sidebar-right-padding: var(--ax-sidebar-padding);
+  --ax-sidebar-right-collapsed-offset: 0rem;
+
+  /* For top/bottom sidebars */
+  // Top
+  --ax-sidebar-top-width: 100%;
+  --ax-sidebar-top-height: 10rem;
+  --ax-sidebar-top-collapsed-offset: 0rem; /* Optional: Define a collapsed offset if needed */
+
+  // Bottom
+  --ax-sidebar-bottom-width: 100%;
+  --ax-sidebar-bottom-height: 10rem;
+  --ax-sidebar-bottom-collapsed-offset: 0rem; /* Optional: Define a collapsed offset if needed */
+}
+```
+
 ### Token
 
 ### `SIDEBAR_CONFIGURATION`
 
 ```typescript
 import { SIDEBAR_CONFIGURATION } from '@angular.x/sidebar';
+
+
 ```
 
 ### Interface
